@@ -1,0 +1,11 @@
+clf;
+figure;
+subplot(2,1,1);
+stem(n,u);
+plot(m,d','r-',m,s,'g--',m,x,'b-.');
+legend('d[n] ','s[n] ','x[n] ');
+xlabel('Time index n');ylabel('Amplitude');
+title('Unit Sample Sequence');
+axis([-10 20 0 1.2]);
+grid; axis;
+% energy = sum(abs(x).^2);
